@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>Result</h2>
+<p>Consumer Number: {{ cons_num }}</p>
+<p>Due Date: {{ dued }}</p>
+<p>Disconnect Date: {{ disc }}</p>
+<p>Bill Amount: {{ probsd }}</p>
+
+<p><a class="btn btn-default" href={{ url_for('home') }}>Test Again &raquo;</a></p>
+<p><a class="btn btn-default" href="https://wss.kseb.in/selfservices/quickpay" target="_blank">Pay Bill &raquo;</a></p>
+{% endblock %}

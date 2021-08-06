@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Electricity Bill Reader</h1>
+    <form action="{{ url_for('result') }}" method="POST" enctype='multipart/form-data'>
+        <input class="btn btn-primary btn-large" style="text-align: center;" type="file" name="file" accept="image/x-png,image/gif,image/jpeg">
+        <div class="mbr-section-btn mt-3">
+            <input class="btn btn-primary btn-large" type="submit" value="upload">
+        </div>
+    </form>
+</div>
+
+<div class="row">
+    <!--<div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Flask gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://flask.pocoo.org/docs/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>The Python Package Index is a repository of software for the Python programming language.</p>
+        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Microsoft Azure</h2>
+        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
+        <form action="http://localhost:8000/result" method="POST"
+              enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <input type="submit" />
+        </form>
+        <form action="{{ url_for('result') }}" method="POST">
+            <input class="btn btn-success display-4" style="text-align: center;" type="file" name="file" accept="image/x-png,image/gif,image/jpeg">
+            <div class="mbr-section-btn mt-3">
+                <input class="btn btn-success display-4" type="submit" value="upload">
+            </div>
+        </form>
+    </div>
+</div>-->
+
+    {% endblock %}
