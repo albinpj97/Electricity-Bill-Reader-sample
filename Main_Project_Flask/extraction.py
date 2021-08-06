@@ -6,8 +6,8 @@ def textExtraction(image_data):
   pg2=0
   pg3=0
   pg4=0
-  endpoint = "https://cv-api-for-text-extraction.cognitiveservices.azure.com/"
-  subscription_key = "262003d9152e46d1acf7e846aa8fc2c7"
+  endpoint = "###############"
+  subscription_key = "################"
   text_recognition_url = endpoint + "vision/v3.0/read/analyze"
   #image_data = open(image_path, "rb").read()
   headers = {'Ocp-Apim-Subscription-Key': subscription_key,
